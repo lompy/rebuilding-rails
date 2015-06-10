@@ -14,7 +14,5 @@ class RulerApplicationTest < MiniTest::Test
     get "/"
 
     assert last_response.ok?
-    body = last_response.body
-    assert body["Hello"]
   end
 end
